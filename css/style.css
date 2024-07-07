@@ -26,7 +26,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-    color: #EF233C;
+    color: #025DB1;
     outline: none;
     text-decoration: none;
 }
@@ -46,20 +46,20 @@ a:focus {
     font-weight: 600;
     letter-spacing: 1px;
     color: #ffffff;
-    background: #EF233C;
+    background: #025DB1;
     border: 2px solid transparent;
     border-radius: 0;
-    box-shadow: inset 0 0 0 50px #EF233C;
+    box-shadow: inset 0 0 0 50px #025DB1;
     transition: ease-out 0.3s;
     -webkit-transition: ease-out 0.3s;
     -moz-transition: ease-out 0.3s;
 }
 
 .btn:hover {
-    color: #EF233C;
+    color: #025DB1;
     background: transparent;
-    box-shadow: inset 0 0 0 0 #EF233C;
-    border-color: #EF233C;
+    box-shadow: inset 0 0 0 0 #025DB1;
+    border-color: #025DB1;
 }
 
 #loader {
@@ -93,7 +93,7 @@ a:focus {
     width: 45px;
     height: 45px;
     border: 5px solid #dddddd;
-    border-top: 5px solid #EF233C;
+    border-top: 5px solid #025DB1;
     border-radius: 50%;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
@@ -163,6 +163,7 @@ a:focus {
     max-height: 40px;
 }
 
+
 .navbar .dropdown-menu {
     margin-top: 0;
     border: 0;
@@ -190,7 +191,7 @@ a:focus {
     }
     
     .navbar.nav-sticky .navbar-brand {
-        color: #EF233C;
+        color: #025DB1;
     }
 
     .navbar-light .navbar-nav .nav-link,
@@ -213,7 +214,7 @@ a:focus {
     
     .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
     .navbar-light.nav-sticky .navbar-nav .nav-link.active {
-        color: #EF233C;
+        color: #025DB1;
     }
 }
 
@@ -224,7 +225,7 @@ a:focus {
     }
     
     .navbar .navbar-brand {
-        color: #EF233C;
+        color: #025DB1;
     }
     
     .navbar .navbar-nav {
@@ -271,6 +272,19 @@ a:focus {
     max-height: 80%;
 }
 
+.larger-hero-image {
+    width: 100%; /* Ajuste conforme necessário */
+    max-width: 600px; /* Ou qualquer tamanho máximo que você desejar */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+@media (max-width: 767px) {
+    .hero-image {
+        margin-top: -60px; /* Ajuste este valor conforme necessário */
+    }
+}
+
+
 .hero .hero-content {
     position: relative;
     padding-left: 75px;
@@ -291,17 +305,17 @@ a:focus {
     color: #025DB1;
     font-size: 60px;
     font-weight: 700;
-    letter-spacing: 3px;
-    margin-bottom: 15px;
+    letter-spacing: 1px;
+    margin-bottom: 5px; /* Reduzi a margem inferior para aproximar do h2 */
 }
 
 .hero .hero-text h2 {
     display: inline-block;
     margin: 0;
-    height: 35px;
     color: #000000;
-    font-size: 35px;
-    font-weight: 600;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 60px; /* Ajustei a altura da linha para alinhar melhor com o h1 */
 }
 
 .hero .hero-text .typed-text {
@@ -353,8 +367,9 @@ a:focus {
     }
     
     .hero .hero-text h2 {
-        font-size: 25px;
-        height: 25px;
+        font-size: 45px;
+        height: 45px;
+        line-height: 20px; /* Ajustei a altura da linha para alinhar melhor com o h1 */
     }
     
     .hero .hero-btn .btn {
@@ -385,8 +400,9 @@ a:focus {
     }
     
     .hero .hero-text h2 {
-        font-size: 22px;
-        height: 22px;
+        font-size: 32px;
+        height: 32px;
+        line-height: 20px; /* Ajustei a altura da linha para alinhar melhor com o h1 */
     }
     
     .hero .hero-btn .btn {
@@ -405,8 +421,9 @@ a:focus {
     }
     
     .hero .hero-text h2 {
-        font-size: 18px;
-        height: 18px;
+        font-size: 30px;
+        height: 30px;
+        line-height: 20px; /* Ajustei a altura da linha para alinhar melhor com o h1 */
     }
     
     .hero .hero-btn .btn {
@@ -444,7 +461,7 @@ a:focus {
     top: 11px;
     right: 0;
     left: -30px;
-    background: #EF233C;
+    background: #025DB1;
     z-index: -1;
 }
 
@@ -455,7 +472,7 @@ a:focus {
     height: 3px;
     top: 11px;
     left: 3px;
-    background: #EF233C;
+    background: #025DB1;
     z-index: 1;
 }
 
