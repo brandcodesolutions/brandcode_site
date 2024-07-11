@@ -780,7 +780,7 @@
         Team End -->
         
         
-        <!-- Contact Start -->
+        <!-- Contact Start
         <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
             <div class="container-fluid">
                 <div class="container">
@@ -791,23 +791,23 @@
                                 <div id="success"></div>
                                 <form name="sentMessage" id="contactForm" novalidate="novalidate">
                                     <div class="control-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                        <input type="text" class="form-control" id="name" placeholder="Nome" required="required" data-validation-required-message="Por favor digite seu nome" />
                                         <p class="help-block"></p>
                                     </div>
                                     <div class="control-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                        <input type="email" class="form-control" id="email" placeholder="E-mail" required="required" data-validation-required-message="Por favor digite seu e-mail" />
                                         <p class="help-block"></p>
                                     </div>
                                     <div class="control-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                        <input type="text" class="form-control" id="subject" placeholder="Assunto" required="required" data-validation-required-message="Por favor digite o assunto" />
                                         <p class="help-block"></p>
                                     </div>
                                     <div class="control-group">
-                                        <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                        <textarea class="form-control" id="message" placeholder="Mensagem" required="required" data-validation-required-message="Por favor digite a mensagem"></textarea>
                                         <p class="help-block"></p>
                                     </div>
                                     <div>
-                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
+                                        <button class="btn" type="submit" id="sendMessageButton">Enviar Mensagem</button>
                                     </div>
                                 </form>
                             </div>
@@ -816,63 +816,176 @@
                 </div>
             </div>
         </div>
-        <!-- Contact End -->
+        Contact End -->
 
 
-        <!-- Blog Start -->
-        <div class="blog" id="blog">
+         <!-- Perguntas Frequentes Start -->
+
+         <style>
+            /* Estilos para a seção de Perguntas Frequentes (FAQ) */
+            .faq {
+                background-color: #ffffff; /* Cor de fundo da seção */
+                padding: 60px 0; /* Espaçamento interno */
+            }
+        
+            .faq-item {
+                margin-bottom: 20px; /* Espaçamento inferior entre os itens */
+            }
+        
+            .faq-question {
+                cursor: pointer; /* Mostra o cursor como ponteiro para indicar interatividade */
+                padding: 15px 20px; /* Espaçamento interno da pergunta */
+                border-radius: 10px; /* Borda arredondada */
+                background-color: #ffffff; /* Cor de fundo da pergunta */
+                box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+                transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+            }
+        
+            .faq-question h2 {
+                margin: 0; /* Remove margem interna do título da pergunta */
+                font-size: 18px; /* Tamanho da fonte do título */
+                color: #333333; /* Cor do texto da pergunta */
+            }
+        
+            .faq-answer {
+                display: none; /* Inicia a resposta oculta */
+                padding: 15px 20px; /* Espaçamento interno da resposta */
+            }
+        
+            .faq-question.active {
+                background-color: #f0f0f0; /* Cor de fundo ao passar o mouse ou clicar */
+            }
+        
+            .faq-answer p {
+                margin-bottom: 15px; /* Espaçamento inferior entre os parágrafos da resposta */
+                font-size: 16px; /* Tamanho da fonte do texto da resposta */
+                color: #666666; /* Cor do texto da resposta */
+            }
+        </style>
+        
+        <div class="faq" id="faq">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>From Blog</p>
-                    <h2>Latest Articles</h2>
+                    <h2>Dúvidas Comuns</h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="blog-img">
-                                <img src="img/blog-1.jpg" alt="Blog">
+                        <div class="faq-item wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="faq-question" onclick="toggleFaqAnswer(1)">
+                                <h2>Como faço para começar?</h2>
                             </div>
-                            <div class="blog-text">
-                                <h2>Lorem ipsum dolor sit amet</h2>
-                                <div class="blog-meta">
-                                    <p><i class="far fa-user"></i>Admin</p>
-                                    <p><i class="far fa-list-alt"></i>Web Design</p>
-                                    <p><i class="far fa-calendar-alt"></i>01-Jan-2045</p>
-                                    <p><i class="far fa-comments"></i>5</p>
-                                </div>
+                            <div class="faq-answer" id="faq-answer-1">
                                 <p>
-                                    Lorem ipsum dolor sit amet elit. Nullam commodo mattis mi. Nullam eu erat lectus. Proin viverra risus vitae luctus. Proin ut ante, vitae sapien. Fusce sem ac erat rhoncus, ornare mattis nisl massa et eros vitae pulvin
+                                    Para começar, você precisa se registrar em nossa plataforma e seguir os passos indicados no processo de cadastro.
                                 </p>
-                                <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="blog-img">
-                                <img src="img/blog-2.jpg" alt="Blog">
+                        <div class="faq-item wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="faq-question" onclick="toggleFaqAnswer(2)">
+                                <h2>Como posso recuperar minha senha?</h2>
                             </div>
-                            <div class="blog-text">
-                                <h2>Lorem ipsum dolor sit amet</h2>
-                                <div class="blog-meta">
-                                    <p><i class="far fa-user"></i>Admin</p>
-                                    <p><i class="far fa-list-alt"></i>Apps Design</p>
-                                    <p><i class="far fa-calendar-alt"></i>01-Jan-2045</p>
-                                    <p><i class="far fa-comments"></i>10</p>
-                                </div>
+                            <div class="faq-answer" id="faq-answer-2">
                                 <p>
-                                    Lorem ipsum dolor sit amet elit. Nullam commodo mattis mi. Nullam eu erat lectus. Proin viverra risus vitae luctus. Proin ut ante, vitae sapien. Fusce sem ac erat rhoncus, ornare mattis nisl massa et eros vitae pulvin
+                                    Você pode recuperar sua senha através da opção "Esqueci minha senha" na página de login. Siga as instruções enviadas para seu e-mail.
                                 </p>
-                                <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="faq-item wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="faq-question" onclick="toggleFaqAnswer(3)">
+                                <h2>Qual é o horário de funcionamento?</h2>
+                            </div>
+                            <div class="faq-answer" id="faq-answer-3">
+                                <p>
+                                    Nosso horário de funcionamento é de segunda a sexta-feira, das 9h às 18h. Estamos fechados aos finais de semana e feriados nacionais.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="faq-item wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="faq-question" onclick="toggleFaqAnswer(4)">
+                                <h2>Quais são as formas de pagamento aceitas?</h2>
+                            </div>
+                            <div class="faq-answer" id="faq-answer-4">
+                                <p>
+                                    Aceitamos pagamentos via cartão de crédito, transferência bancária e PayPal. Infelizmente, não aceitamos pagamentos em dinheiro.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="faq-item wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="faq-question" onclick="toggleFaqAnswer(5)">
+                                <h2>Posso cancelar minha assinatura a qualquer momento?</h2>
+                            </div>
+                            <div class="faq-answer" id="faq-answer-5">
+                                <p>
+                                    Sim, você pode cancelar sua assinatura a qualquer momento. Basta acessar suas configurações de conta e seguir as instruções para cancelar.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="faq-item wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="faq-question" onclick="toggleFaqAnswer(6)">
+                                <h2>Como faço para entrar em contato com o suporte ao cliente?</h2>
+                            </div>
+                            <div class="faq-answer" id="faq-answer-6">
+                                <p>
+                                    Você pode entrar em contato com nosso suporte ao cliente através do formulário de contato em nosso site ou enviando um e-mail para nosso endereço de suporte.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="faq-item wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="faq-question" onclick="toggleFaqAnswer(7)">
+                                <h2>Qual é a política de reembolso da empresa?</h2>
+                            </div>
+                            <div class="faq-answer" id="faq-answer-7">
+                                <p>
+                                    Nossa política de reembolso permite que você solicite um reembolso dentro de 30 dias da compra, sujeito aos termos e condições especificados em nossos termos de serviço.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="faq-item wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="faq-question" onclick="toggleFaqAnswer(8)">
+                                <h2>Posso alterar meu plano de assinatura?</h2>
+                            </div>
+                            <div class="faq-answer" id="faq-answer-8">
+                                <p>
+                                    Sim, você pode alterar seu plano de assinatura a qualquer momento. Basta acessar suas configurações de conta e selecionar o novo plano desejado.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Blog End -->
+        
+        <script>
+            // Função para alternar a exibição da resposta ao clicar
+            function toggleFaqAnswer(id) {
+                var answer = document.getElementById('faq-answer-' + id);
+        
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                } else {
+                    answer.style.display = 'block';
+                }
+            }
+        </script>
+        
 
+<!-- Perguntas Frequentes End -->
 
+                
         <!-- Footer Start -->
         <div class="footer wow fadeIn" data-wow-delay="0.3s">
             <div class="container-fluid">

@@ -1051,7 +1051,7 @@ a:focus {
 }
 
 .price .price-item.featured-item .price-header {
-    color: #EF233C;
+    color: #025DB1;
 }
 
 .price .price-title h2 {
@@ -1081,7 +1081,7 @@ a:focus {
 }
 
 .price .price-item.featured-item h2 {
-    color: #EF233C;
+    color: #025DB1;
 }
 
 .price .price-body {
@@ -1117,15 +1117,15 @@ a:focus {
 
 .price .price-item.featured-item .price-action .btn {
     color: #ffffff;
-    background: #EF233C;
-    box-shadow: inset 0 0 0 50px #EF233C;
+    background: #025DB1;
+    box-shadow: inset 0 0 0 50px #025DB1;
 }
 
 .price .price-item.featured-item .price-action .btn:hover {
-    color: #EF233C;
+    color: #025DB1;
     background: transparent;
-    box-shadow: inset 0 0 0 0 #EF233C;
-    border-color: #EF233C;
+    box-shadow: inset 0 0 0 0 #025DB1;
+    border-color: #025DB1;
 }
 
 
@@ -1168,7 +1168,7 @@ a:focus {
 }
 
 .team .team-text h2 {
-    color: #EF233C;
+    color: #025DB1;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 5px;
@@ -1207,7 +1207,7 @@ a:focus {
 }
 
 .team .team-item:hover {
-    box-shadow: inset 800px 0 0 0 #EF233C;
+    box-shadow: inset 800px 0 0 0 #025DB1;
 }
 
 .team .team-item:hover .team-img img {
@@ -1347,7 +1347,7 @@ a:focus {
     position: relative;
     width: 100%;
     margin: 45px 0;
-    background: #EF233C;
+    background: #025DB1;
 }
 
 .contact .container-fluid {
@@ -1358,7 +1358,7 @@ a:focus {
 .contact .contact-form {
     position: relative;
     padding: 90px 0 90px 45px;
-    background: #EF233C;
+    background: #025DB1;
 }
 
 .contact .contact-form input {
@@ -1392,7 +1392,7 @@ a:focus {
 
 .contact .contact-form .btn {
     margin-top: 35px;
-    color: #EF233C;
+    color: #025DB1;
     background: #ffffff;
     box-shadow: inset 0 0 0 50px #ffffff;
 }
@@ -1500,13 +1500,15 @@ a:focus {
 }
 
 
+
+
 /*******************************/
 /********* Footer CSS **********/
 /*******************************/
 .footer {
     position: relative;
     margin-top: 45px;
-    background: #EF233C;
+    background: #025DB1;
 }
 
 .footer .container-fluid {
