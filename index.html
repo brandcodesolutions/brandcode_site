@@ -76,8 +76,8 @@
                     </div>
                     
                     <div class="hero-btn">
-                        <a class="btn" href="">Saiba mais</a>
-                        <a class="btn" href="">Contate-nos</a>
+                        <a class="btn" href="">Conferir Planos</a>
+                        <a class="btn" href="">  Contate-nos  </a>
                     </div>
                 </div>
             </div>
@@ -293,7 +293,7 @@
             <div class="container">
                 <div class="section-header text-center">
                     
-                    <h2>Adquira <span>Agora</span> Mesmo!</h2>
+                    <h2>Adquira Agora!</h2>
                 </div>
                 <div class="container banner-text">
                     <p>
@@ -305,9 +305,8 @@
         </div>
         <!-- Banner End -->
 
-
-        <!-- Portfolio Start -->
-        <!-- Incluir o jQuery (necessário para o Bootstrap) -->
+      <!-- Portfolio Start -->
+<!-- Incluir o jQuery (necessário para o Bootstrap) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <!-- Incluir os arquivos CSS e JavaScript do Bootstrap -->
@@ -320,82 +319,165 @@
     }
     
     .portfolio-item img {
-        max-width: 70%;
+        max-width: 60%;
         height: auto;
         display: block;
         margin: 0 auto;
         max-height: 120px;
+        transition: transform 0.3s ease-in-out;
     }
 
-    /* Ajustes para telas menores que 768px (tablets e dispositivos móveis) */
-    @media (max-width: 768px) {
-        .carousel-item .col-lg-4 {
-            flex: 0 0 30%; /* Cada item ocupa 50% da largura em telas menores */
-            max-width: 30%;
+    .portfolio-item:hover img {
+        transform: scale(0.9); /* Diminui em 10% */
+    }
+
+    @media (max-width: 767px) {
+        .portfolio-item img {
+            max-width: 100%;
+            max-height: none;
         }
     }
 </style>
+
 
 <div class="portfolio" id="portfolio">
     <div class="container">
         <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
             <p>Portfolio</p>
-            <h2>My Excellent Portfolio</h2>
+            <h2>Projetos Recentes</h2>
         </div>
 
-        <!-- Carrossel de portfólio -->
-        <div id="portfolioCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="portfolio-item wow fadeInUp" data-wow-delay="0.1s">
-                                <img src="img/logosite1.png" class="d-block w-100" alt="Logo da Empresa 1">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="portfolio-item wow fadeInUp" data-wow-delay="0.2s">
-                                <img src="img/logosite2.png" class="d-block w-100" alt="Logo da Empresa 2">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="portfolio-item wow fadeInUp" data-wow-delay="0.3s">
-                                <img src="img/logosite3.png" class="d-block w-100" alt="Logo da Empresa 3">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="portfolio-item wow fadeInUp" data-wow-delay="0.4s">
-                                <img src="img/logosite4.png" class="d-block w-100" alt="Logo da Empresa 4">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="portfolio-item wow fadeInUp" data-wow-delay="0.5s">
-                                <img src="img/logosite5.png" class="d-block w-100" alt="Logo da Empresa 5">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="portfolio-item wow fadeInUp" data-wow-delay="0.6s">
-                                <img src="img/logosite6.png" class="d-block w-100" alt="Logo da Empresa 6">
-                            </div>
-                        </div>
-                    </div>
+        <!-- Grade de portfólio -->
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                <div class="portfolio-item wow fadeInUp" data-wow-delay="0.1s">
+                    <img src="img/logosite1.png" class="d-block w-100" alt="Logo da Empresa 1">
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#portfolioCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#portfolioCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                <div class="portfolio-item wow fadeInUp" data-wow-delay="0.2s">
+                    <img src="img/logosite2.png" class="d-block w-100" alt="Logo da Empresa 2">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                <div class="portfolio-item wow fadeInUp" data-wow-delay="0.3s">
+                    <img src="img/logosite3.png" class="d-block w-100" alt="Logo da Empresa 3">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                <div class="portfolio-item wow fadeInUp" data-wow-delay="0.4s">
+                    <img src="img/logosite4.png" class="d-block w-100" alt="Logo da Empresa 4">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                <div class="portfolio-item wow fadeInUp" data-wow-delay="0.5s">
+                    <img src="img/logosite5.png" class="d-block w-100" alt="Logo da Empresa 5">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                <div class="portfolio-item wow fadeInUp" data-wow-delay="0.6s">
+                    <img src="img/logosite6.png" class="d-block w-100" alt="Logo da Empresa 6">
+                </div>
+            </div>
         </div>
     </div>
 </div>
+<!-- Portfolio End -->
+
+<!-- Testimonial Start -->
+<div class="testimonial wow fadeInUp" data-wow-delay="0.1s" id="review">
+    <div class="container">
+        <div class="testimonial-icon">
+            <i class="fa fa-quote-left"></i>
+        </div>
+        <div class="owl-carousel testimonials-carousel">
+            <div class="testimonial-item">
+                <div class="testimonial-img">
+                    <img src="img/testimonial-1.jpg" alt="Image">
+                </div>
+                <div class="testimonial-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
+                    </p>
+                    <h3>Customer Name</h3>
+                    <h4>Profession</h4>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-img">
+                    <img src="img/testimonial-2.jpg" alt="Image">
+                </div>
+                <div class="testimonial-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
+                    </p>
+                    <h3>Customer Name</h3>
+                    <h4>Profession</h4>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-img">
+                    <img src="img/testimonial-3.jpg" alt="Image">
+                </div>
+                <div class="testimonial-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
+                    </p>
+                    <h3>Customer Name</h3>
+                    <h4>Profession</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+<!-- Passos Start -->
+<style>
+    .passos-item img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .passos-item:hover img {
+        transform: scale(1.1); /* Aumenta em 10% */
+    }
+</style>
+<div class="passos" id="passos">
+    <div class="container">
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>Passo a Passo</p>
+            <h2>Assine um Site Conosco em 4 Passos Simples</h2>
+        </div>
+
+        <!-- Grade de imagens -->
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="passos-item wow fadeInUp" data-wow-delay="0.1s">
+                    <img src="img/passo1.png" class="d-block w-100" alt="Passo 1" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="passos-item wow fadeInUp" data-wow-delay="0.2s">
+                    <img src="img/passo2.png" class="d-block w-100" alt="Passo 2" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="passos-item wow fadeInUp" data-wow-delay="0.3s">
+                    <img src="img/passo3.png" class="d-block w-100" alt="Passo 3" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="passos-item wow fadeInUp" data-wow-delay="0.4s">
+                    <img src="img/passo4.png" class="d-block w-100" alt="Passo 4" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!-- Incluir o jQuery antes do Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -488,11 +570,11 @@
         Portfolio End -->
         
         
-        <!-- Banner Start -->
+        <!-- Banner Start
         <div class="banner wow zoomIn" data-wow-delay="0.1s">
             <div class="container">
                 <div class="section-header text-center">
-                    <!--<p>Awesome Discount</p>-->
+                   <p>Awesome Discount</p>
                     <h2>Adquira <span>Agora</span> Mesmo!</h2>
                 </div>
                 <div class="container banner-text">
@@ -503,15 +585,15 @@
                 </div>
             </div>
         </div>
-        <!-- Banner End -->
+       Banner End -->
         
         
         <!-- Price Start -->
         <div class="price" id="price">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>Pricing Plan</p>
-                    <h2>Affordable Price</h2>
+                    <p>Planos</p>
+                    <h2>Confira Nossos Planos</h2>
                 </div>
                 <div class="row">
                     <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
@@ -602,58 +684,9 @@
             </div>
         </div>
         <!-- Price End -->
-        
-        
-        <!-- Testimonial Start -->
-        <div class="testimonial wow fadeInUp" data-wow-delay="0.1s" id="review">
-            <div class="container">
-                <div class="testimonial-icon">
-                    <i class="fa fa-quote-left"></i>
-                </div>
-                <div class="owl-carousel testimonials-carousel">
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/testimonial-1.jpg" alt="Image">
-                        </div>
-                        <div class="testimonial-text">
-                            <p>
-                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
-                            </p>
-                            <h3>Customer Name</h3>
-                            <h4>Profession</h4>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/testimonial-2.jpg" alt="Image">
-                        </div>
-                        <div class="testimonial-text">
-                            <p>
-                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
-                            </p>
-                            <h3>Customer Name</h3>
-                            <h4>Profession</h4>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/testimonial-3.jpg" alt="Image">
-                        </div>
-                        <div class="testimonial-text">
-                            <p>
-                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
-                            </p>
-                            <h3>Customer Name</h3>
-                            <h4>Profession</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Testimonial End -->
 
 
-        <!-- Team Start -->
+        <!-- Team Start
         <div class="team" id="team">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
@@ -744,7 +777,7 @@
                 </div>
             </div>
         </div>
-        <!-- Team End -->
+        Team End -->
         
         
         <!-- Contact Start -->
