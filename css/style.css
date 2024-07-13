@@ -1255,8 +1255,8 @@ a:focus {
 /*******************************/
 .testimonial {
     position: relative;
-    margin: 45px 0;
-    padding: 90px 0;
+    margin: 30px 0;
+    padding: 30px 0; /* Diminua o padding para reduzir o espaço azul */
     background: #025DB1;
 }
 
@@ -1265,7 +1265,7 @@ a:focus {
 }
 
 .testimonial .testimonial-icon {
-    margin-bottom: 45px;
+    margin-bottom: 30px; /* Ajuste o espaço inferior para diminuir a área azul */
     text-align: center;
 }
 
@@ -1288,11 +1288,20 @@ a:focus {
 
 .testimonial .testimonial-item img {
     margin: 0 auto;
-    width: 120px;
+    width: 35%; /* Definindo a largura como porcentagem */
+    height: auto; /* Ajusta a altura automaticamente */
     padding: 10px;
-    border: 5px dotted #ffffff;
-    border-radius: 100px;
+    border-radius: 0;
 }
+
+@media (max-width: 767px) {
+    .testimonial .testimonial-item img {
+        width: 100%; /* Ajuste a largura para dispositivos móveis */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+}
+
+
 
 .testimonial .testimonial-text {
     position: relative;
